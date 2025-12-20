@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Design Agency</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Segoe UI", sans-serif;
+        }
+
+        body {
+            background: #dff7e5;
+        }
+
+        /* ===== NAVBAR ===== */
+        header {
+            padding: 25px 60px;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 22px;
+            font-weight: 700;
+        }
+
+        .logo span {
+            color: #f5a623;
+        }
+
+        .nav-links a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #222;
+            font-size: 15px;
+        }
+
+        .nav-actions button {
+            padding: 8px 18px;
+            border-radius: 8px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        .login {
+            background: transparent;
+            border: 1px solid #2db66f;
+            color: #2db66f;
+            margin: 5px;
+            padding: 5px;
+        }
+
+        .register {
+            background: #2db66f;
+            border: 1px solid  #2db66f;
+            color: #fff;
+            margin-left: 10px;
+        }
+
+        /* ===== HERO SECTION ===== */
+        .hero {
+            display: flex;
+            align-items: center;
+            padding: 40px 60px;
+        }
+
+        .hero-text {
+            width: 50%;
+        }
+
+        .hero-text h1 {
+            font-size: 52px;
+            font-weight: 800;
+            color: #111;
+            line-height: 1.2;
+        }
+
+        .hero-text p {
+            margin-top: 20px;
+            color: #444;
+            font-size: 16px;
+            max-width: 450px;
+        }
+
+        .hero-text .btn {
+            margin-top: 30px;
+            background: #2db66f;
+            color: #fff;
+            padding: 14px 30px;
+            border: none;
+            border-radius: 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        /* ===== HERO IMAGE ===== */
+        .hero-img {
+            width: 50%;
+            position: relative;
+            text-align: right;
+        }
+
+        .hero-img img {
+            width: 80%;
+            max-width: 420px;
+        }
+
+        /* FLOATING ICONS */
+        .icon {
+            position: absolute;
+            width: 45px;
+            height: 45px;
+            background: #fff;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            font-size: 20px;
+        }
+
+        .icon.star {
+            top: 80px;
+            left: 60px;
+            background: #ffedd5;
+        }
+
+        .icon.check {
+            top: 160px;
+            right: 40px;
+            background: #dcfce7;
+        }
+
+        .icon.link {
+            bottom: 90px;
+            left: 120px;
+            background: #e0f2fe;
+        }
+
+        @media(max-width:900px) {
+            .hero {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .hero-text,
+            .hero-img {
+                width: 100%;
+            }
+
+            .hero-img img {
+                width: 70%;
+                margin-top: 40px;
+            }
+        }
+        *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+/* body{
+    background:#ffffff;
+    color:#111;
+} */
+
+/* ===== SECTION ===== */
+.what-we-do{
+    padding:80px 60px;
+    text-align:center;
+}
+
+.section-tag{
+    color:#22c55e;
+    font-size:13px;
+    font-weight:600;
+    letter-spacing:2px;
+}
+
+.section-title{
+    font-size:32px;
+    font-weight:800;
+    margin:12px 0 50px;
+    line-height:1.3;
+}
+
+/* ===== SERVICES ===== */
+.services{
+    display:flex;
+    justify-content:center;
+    gap:60px;
+    margin-bottom:70px;
+}
+
+.service-box{
+    width:260px;
+    text-align:center;
+}
+
+.icon-box{
+    width:55px;
+    height:55px;
+    background:#dcfce7;
+    border-radius:12px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin:0 auto 15px;
+    font-size:22px;
+    color:#16a34a;
+}
+
+.service-box h3{
+    font-size:18px;
+    font-weight:700;
+    margin-bottom:10px;
+}
+
+.service-box p{
+    font-size:14px;
+    color:#555;
+    line-height:1.6;
+}
+
+.service-box a{
+    display:inline-block;
+    margin-top:12px;
+    font-size:13px;
+    color:#111;
+    text-decoration:none;
+    font-weight:600;
+}
+
+/* ===== STATS ===== */
+.stats{
+    background:#f0fdf4;
+    padding:40px 0;
+}
+
+.stats-container{
+    max-width:1000px;
+    margin:auto;
+    display:flex;
+    justify-content:space-around;
+    text-align:center;
+}
+
+.stat-box{
+    width:200px;
+}
+
+.stat-box .icon{
+    font-size:22px;
+    color:#16a34a;
+    margin-bottom:8px;
+}
+
+.stat-box h2{
+    color:#16a34a;
+    font-size:26px;
+    font-weight:800;
+}
+
+.stat-box p{
+    font-size:13px;
+    color:#333;
+}
+
+/* ===== RESPONSIVE ===== */
+@media(max-width:900px){
+    .services{
+        flex-direction:column;
+        align-items:center;
+    }
+    .stats-container{
+        flex-direction:column;
+        gap:30px;
+    }
+}
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="navbar">
+            <div class="logo">Design<span>AGENCY</span></div>
+            <div class="nav-links">
+                <a href="#">Service</a>
+                <a href="#">About Us</a>
+                <a href="#">Contact Us</a>
+                 <button class="login">Log in</button>
+                <button class="register">Register</button>
+            </div>
+            <!-- <div class="nav-actions">
+                <button class="login">Log in</button>
+                <button class="register">Register</button>
+            </div> -->
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Increase Your<br>Customers Loyalty<br>and Satisfaction</h1>
+            <p>
+                We help businesses like yours earn more customers,
+                standout from competitors, make more money
+            </p>
+            <button class="btn">Get Started</button>
+        </div>
+
+        <div class="hero-img">
+            <img src="./1.jpeg" alt="Girl with Laptop">
+
+
+        </div>
+    </section>
+    <section class="what-we-do">
+    <div class="section-tag">WHAT WE DO</div>
+    <div class="section-title">
+        We provide the Perfect Solution<br>
+        to your business growth
+    </div>
+
+    <div class="services">
+        <div class="service-box">
+            <div class="icon-box">📈</div>
+            <h3>Grow Your Business</h3>
+            <p>
+                We help identify the best ways to
+                improve your business
+            </p>
+            <a href="#">Learn More →</a>
+        </div>
+
+        <div class="service-box">
+            <div class="icon-box">💚</div>
+            <h3>Improve brand loyalty</h3>
+            <p>
+                We help identify the best ways to
+                improve your business
+            </p>
+            <a href="#">Learn More →</a>
+        </div>
+
+        <div class="service-box">
+            <div class="icon-box">🔁</div>
+            <h3>Improve Business Model</h3>
+            <p>
+                We help identify the best ways to
+                improve your business
+            </p>
+            <a href="#">Learn More →</a>
+        </div>
+    </div>
+</section>
+
+<section class="stats">
+    <div class="stats-container">
+        <div class="stat-box">
+            <div class="icon">🛠</div>
+            <p>Completed Projects</p>
+            <h2>100+</h2>
+        </div>
+
+        <div class="stat-box">
+            <div class="icon">😊</div>
+            <p>Customer Satisfaction</p>
+            <h2>20%</h2>
+        </div>
+
+        <div class="stat-box">
+            <div class="icon">💰</div>
+            <p>Raised by Clients</p>
+            <h2>$10M</h2>
+        </div>
+
+        <div class="stat-box">
+            <div class="icon">📅</div>
+            <p>Years in Business</p>
+            <h2>2 yrs</h2>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>
+
+
