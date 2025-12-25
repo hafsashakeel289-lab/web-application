@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Contact Us Footer</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#ffffff;
+}
+
+/* CONTACT SECTION */
+.contact-section{
+    background:#fff;
+    padding:60px 80px;
+    position:relative;
+    border-bottom:1px solid #eee;
+}
+
+.heard{
+    font-size:12px;
+    letter-spacing:1px;
+    color:#555;
+}
+
+.contact-title{
+    text-align:center;
+    font-size:46px;
+    font-weight:500;
+}
+
+.line{
+    width:110px;
+    height:3px;
+    background:#e6ff00;
+    margin:10px auto 0;
+}
+
+.arrow{
+    position:absolute;
+    right:60px;
+    top:50%;
+    transform:translateY(-50%);
+    width:55px;
+    height:55px;
+    background:#e6ff00;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:22px;
+    cursor:pointer;
+}
+
+/* FOOTER */
+.footer{
+    background:#000;
+    color:#fff;
+    padding:60px 80px;
+}
+
+.footer-grid{
+    display:grid;
+    grid-template-columns:2fr 2fr 2fr 2fr;
+    gap:40px;
+}
+
+.brand{
+    font-size:28px;
+    font-weight:bold;
+    line-height:1.3;
+}
+
+.footer h4{
+    font-size:14px;
+    margin-bottom:12px;
+}
+
+.footer p,
+.footer a{
+    font-size:13px;
+    color:#ccc;
+    line-height:1.6;
+    text-decoration:none;
+}
+
+.footer a:hover{
+    color:#e6ff00;
+}
+
+.map{
+    display:inline-block;
+    margin-top:10px;
+    font-weight:bold;
+}
+
+.newsletter a{
+    display:block;
+    margin:10px 0;
+    font-weight:bold;
+}
+
+.social span{
+    margin-right:15px;
+    font-size:16px;
+    cursor:pointer;
+}
+
+@media(max-width:900px){
+    .contact-section{
+        padding:40px 20px;
+    }
+
+    .arrow{
+        position:static;
+        margin:30px auto 0;
+        transform:none;
+    }
+
+    .footer-grid{
+        grid-template-columns:1fr;
+        text-align:center;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- CONTACT -->
+<div class="contact-section">
+    <div class="heard">HEARD ENOUGH? →</div>
+
+    <h1 class="contact-title">Contact us</h1>
+    <div class="line"></div>
+
+    <div class="arrow">→</div>
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+    <div class="footer-grid">
+
+        <div class="brand">
+            The agency<br>
+            for impatient<br>
+            brands®
+        </div>
+
+        <div>
+            <h4>LONDON</h4>
+            <p>newbusiness@weareimpero.com</p>
+            <p>+44 20 7998 7571</p>
+            <p>
+                Unit 306, Metropolitan Wharf,<br>
+                70 Wapping Wall,<br>
+                London E1W 3SS
+            </p>
+            <a class="map" href="#">SEE ON MAP →</a>
+        </div>
+
+        <div>
+            <h4>BUENOS AIRES</h4>
+            <p>buenosaires@weareimpero.com</p>
+            <p>+54 11 6799 7949</p>
+            <p>
+                Cabildo 1458 1st floor,<br>
+                Buenos Aires
+            </p>
+            <a class="map" href="#">SEE ON MAP →</a>
+        </div>
+
+        <div class="newsletter">
+            <h4>WANT TO BE THE SMARTEST<br>IN YOUR OFFICE?</h4>
+            <a href="#">SIGN UP FOR OUR NEWSLETTER →</a>
+
+            <h4>FOLLOW US</h4>
+            <div class="social">
+                <span>Be</span>
+                <span>◎</span>
+                <span>📷</span>
+                <span>in</span>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>
