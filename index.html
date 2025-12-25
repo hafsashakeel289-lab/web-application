@@ -1,197 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Contact Us Footer</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services</title>
 
-<style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family: Arial, Helvetica, sans-serif;
-}
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f8f8f8;
+        }
 
-body{
-    background:#ffffff;
-}
+        .container{
+            width: 85%;
+            margin: auto;
+            padding: 40px 0;
+        }
 
-/* CONTACT SECTION */
-.contact-section{
-    background:#fff;
-    padding:60px 80px;
-    position:relative;
-    border-bottom:1px solid #eee;
-}
+        .top-heading{
+            text-align: center;
+            margin-bottom: 40px;
+        }
 
-.heard{
-    font-size:12px;
-    letter-spacing:1px;
-    color:#555;
-}
+        .top-heading h5{
+            color: #6EB981;
+            letter-spacing: 3px;
+            font-size: 13px;
+        }
 
-.contact-title{
-    text-align:center;
-    font-size:46px;
-    font-weight:500;
-}
+        .top-heading h1{
+            font-size: 34px;
+            margin-top: 5px;
+            color: #444;
+        }
 
-.line{
-    width:110px;
-    height:3px;
-    background:#e6ff00;
-    margin:10px auto 0;
-}
+        .services-section{
+            display: flex;
+            gap: 40px;
+        }
 
-.arrow{
-    position:absolute;
-    right:60px;
-    top:50%;
-    transform:translateY(-50%);
-    width:55px;
-    height:55px;
-    background:#e6ff00;
-    border-radius:50%;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    font-size:22px;
-    cursor:pointer;
-}
+        /* Left Menu */
+        .left-menu{
+            width: 30%;
+        }
 
-/* FOOTER */
-.footer{
-    background:#000;
-    color:#fff;
-    padding:60px 80px;
-}
+        .menu-item{
+            background: #fff;
+            padding: 18px 20px;
+            border-radius: 6px;
+            margin-bottom: 15px;
+            font-size: 17px;
+            color: #333;
+            cursor: pointer;
+            transition: .3s;
+            border: 1px solid #e7e7e7;
+        }
 
-.footer-grid{
-    display:grid;
-    grid-template-columns:2fr 2fr 2fr 2fr;
-    gap:40px;
-}
+        .menu-item:hover{
+            background: #e9ffd4;
+        }
 
-.brand{
-    font-size:28px;
-    font-weight:bold;
-    line-height:1.3;
-}
+        .menu-item.active{
+            background: #5E9C6A;
+            color: white;
+            font-weight: bold;
+        }
 
-.footer h4{
-    font-size:14px;
-    margin-bottom:12px;
-}
+        /* Right Content */
+        .right-content{
+            width: 70%;
+        }
 
-.footer p,
-.footer a{
-    font-size:13px;
-    color:#ccc;
-    line-height:1.6;
-    text-decoration:none;
-}
+        .right-content img{
+            width: 100%;
+            height: auto;
+            border-radius: 6px;
+        }
 
-.footer a:hover{
-    color:#e6ff00;
-}
+        .right-content h2{
+            font-size: 26px;
+            margin-top: 20px;
+        }
 
-.map{
-    display:inline-block;
-    margin-top:10px;
-    font-weight:bold;
-}
+        .right-content p{
+            font-size: 15px;
+            color: #575757;
+            line-height: 1.6;
+            width: 95%;
+        }
 
-.newsletter a{
-    display:block;
-    margin:10px 0;
-    font-weight:bold;
-}
+        /* Responsive */
+        @media (max-width: 900px){
+            .services-section{
+                flex-direction: column;
+            }
 
-.social span{
-    margin-right:15px;
-    font-size:16px;
-    cursor:pointer;
-}
-
-@media(max-width:900px){
-    .contact-section{
-        padding:40px 20px;
-    }
-
-    .arrow{
-        position:static;
-        margin:30px auto 0;
-        transform:none;
-    }
-
-    .footer-grid{
-        grid-template-columns:1fr;
-        text-align:center;
-    }
-}
-</style>
+            .left-menu, .right-content{
+                width: 100%;
+            }
+        }
+    </style>
 </head>
-
 <body>
 
-<!-- CONTACT -->
-<div class="contact-section">
-    <div class="heard">HEARD ENOUGH? →</div>
+    <div class="container">
 
-    <h1 class="contact-title">Contact us</h1>
-    <div class="line"></div>
-
-    <div class="arrow">→</div>
-</div>
-
-<!-- FOOTER -->
-<div class="footer">
-    <div class="footer-grid">
-
-        <div class="brand">
-            The agency<br>
-            for impatient<br>
-            brands®
+        <div class="top-heading">
+            <h5>OUR SERVICES</h5>
+            <h1>We Can Help You With This Situation</h1>
         </div>
 
-        <div>
-            <h4>LONDON</h4>
-            <p>newbusiness@weareimpero.com</p>
-            <p>+44 20 7998 7571</p>
-            <p>
-                Unit 306, Metropolitan Wharf,<br>
-                70 Wapping Wall,<br>
-                London E1W 3SS
-            </p>
-            <a class="map" href="#">SEE ON MAP →</a>
-        </div>
+        <div class="services-section">
 
-        <div>
-            <h4>BUENOS AIRES</h4>
-            <p>buenosaires@weareimpero.com</p>
-            <p>+54 11 6799 7949</p>
-            <p>
-                Cabildo 1458 1st floor,<br>
-                Buenos Aires
-            </p>
-            <a class="map" href="#">SEE ON MAP →</a>
-        </div>
-
-        <div class="newsletter">
-            <h4>WANT TO BE THE SMARTEST<br>IN YOUR OFFICE?</h4>
-            <a href="#">SIGN UP FOR OUR NEWSLETTER →</a>
-
-            <h4>FOLLOW US</h4>
-            <div class="social">
-                <span>Be</span>
-                <span>◎</span>
-                <span>📷</span>
-                <span>in</span>
+            <!-- LEFT MENU -->
+            <div class="left-menu">
+                <div class="menu-item active">Relation Problem</div>
+                <div class="menu-item">Couples Counseling</div>
+                <div class="menu-item">Depression Treatment</div>
+                <div class="menu-item">Family Problem</div>
+                <div class="menu-item">Personal Problem</div>
+                <div class="menu-item">Business Problem</div>
             </div>
-        </div>
 
+            <!-- RIGHT CONTENT -->
+            <div class="right-content">
+                <img src="./8.PNG" alt="Relation Problem">
+                
+                <h2>Relation Problem</h2>
+                <p>
+                    Far far away, behind the word mountains, far from the countries Vokalia and 
+                    Consonantia, there live the blind texts. Separated they live in Bookmarksgrove 
+                    right at the coast of the Semantics, a large language ocean.
+                </p>
+            </div>
+
+        </div>
     </div>
-</div>
 
 </body>
 </html>
